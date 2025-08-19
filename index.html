@@ -1,120 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Farai Mumanyi Portfolio</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Farai Mumanyi - Health & Data Projects</title>
   <style>
     body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f7f8fa;
-      padding-top: 80px;
-      line-height: 1.6;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
       color: #333;
     }
+
+    header {
+      background-color: #0a192f;
+      color: white;
+      text-align: center;
+      padding: 2em 1em;
+    }
+
     .profile-img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
-      border: 4px solid #0077b6;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 1em;
     }
+
+    .container {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+
     h1 {
-      font-size: 2.5em;
-      font-weight: 700;
-      margin-bottom: 20px;
-      color: #0077b6;
-    }
-    h2 {
       font-size: 2em;
-      font-weight: 700;
-      margin-top: 60px;
-      margin-bottom: 20px;
-      color: #023e8a;
+      margin-bottom: 0.2em;
     }
+
+    h2 {
+      font-size: 1.5em;
+      color: #0a192f;
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+      text-align: left;
+    }
+
     p, ul {
       font-size: 1em;
-      margin-bottom: 15px;
+      line-height: 1.6;
+      text-align: left;
     }
-    ul li {
-      margin-bottom: 8px;
+
+    ul {
+      padding-left: 1.2em;
     }
-    .section-container {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px 0;
+
+    section {
+      margin-bottom: 2em;
     }
-    footer {
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 40px;
-      color: #666;
-    }
-    a {
-      color: #0077b6;
+
+    .project-link {
+      color: #0077cc;
       text-decoration: none;
     }
-    a:hover {
+
+    .project-link:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .profile-img {
+        width: 120px;
+        height: 120px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container section-container text-center">
-    <img src="profile.jpg" alt="Farai Mumanyi" class="profile-img">
+
+  <header>
+    <img src="profile.jpg" alt="Farai Mumanyi" class="profile-img" />
     <h1>Farai Mumanyi</h1>
-    <p>Public Health | Project Management | Data Science Enthusiast</p>
+    <p>Public Health & Project Management | Data Enthusiast | Future Health Analyst</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate professional blending public health, project management, and data science to solve real-world challenges. I specialize in health operations optimization, data-driven decision-making, and improving healthcare systems.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Project Management (MBA - STEM)</li>
+        <li>Data Science (IBM Certificate in progress)</li>
+        <li>Python Programming</li>
+        <li>Public Health & Health Promotion</li>
+        <li>Health Analytics & Operations Improvement</li>
+        <li>Quantitative Analysis & Reporting</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Project: Optimizing Clinic Operations</h2>
+      <p>
+        A Python-based resource planning model designed to streamline clinic workflows, optimize staffing and resource allocation, and improve service delivery using simulated healthcare data.
+      </p>
+      <p>
+        👉 <a href="https://github.com/Farai98/clinic-operation-optimization_-_health-resource-planning" class="project-link" target="_blank">View the GitHub Repository</a>
+      </p>
+    </section>
   </div>
-  
-  <div class="container section-container text-start">
-    <h2>About Me</h2>
-    <p>I am passionate about leveraging project management, public health, and data analytics to improve healthcare delivery. My background includes Public Health studies, STEM MBA with project management focus, and certifications in IBM Data Science, Analytics, and CAPM.</p>
-  </div>
-  
-  <div class="container section-container text-start">
-    <h2>Skills</h2>
-    <ul>
-      <li>Project Management (Agile, Scrum)</li>
-      <li>Public Health Analytics</li>
-      <li>Epidemiology & Health Programming</li>
-      <li>Python, R (Basic), SQL, Excel</li>
-      <li>Data Visualization (Matplotlib, Seaborn, Power BI, Tableau)</li>
-      <li>Machine Learning Basics</li>
-      <li>Basic Web Development (GitHub Pages, HTML)</li>
-    </ul>
-  </div>
-  
-  <div class="container section-container text-start">
-    <h2>Project Overview</h2>
-    <p>This project applies Python, data science, and project management to optimize clinic operations—staff scheduling, patient flow, and resource allocation.</p>
-    <ul>
-      <li><strong>Tools Used:</strong> Pandas, NumPy, Matplotlib, Project Management Methods</li>
-      <li><strong>Focus:</strong> Simulating clinic traffic and resource planning</li>
-      <li><strong>Outcome:</strong> Developed a scheduling optimization model</li>
-    </ul>
-  </div>
-  
-  <div class="container section-container text-start">
-    <h2>Project Links</h2>
-    <ul>
-      <li><a href="https://github.com/Farai98/clinic-operation-optimization_-_health-resource-planning" target="_blank">GitHub Repository</a></li>
-      <li><a href="#" target="_blank">Project Notebook (Coming Soon)</a></li>
-    </ul>
-  </div>
-  
-  <footer>
-    &copy; 2025 Farai Mumanyi. All rights reserved.
-  </footer>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
-
-
 
