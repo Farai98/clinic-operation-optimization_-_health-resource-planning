@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Farai Mumanyi — Health & Data Portfolio</title>
   <style>
+    /* Base styles */
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f7f7f7;
       color: #222;
       line-height: 1.6;
+      scroll-behavior: smooth;
     }
+
     .container {
       max-width: 800px;
       margin: 0 auto;
       padding: 40px 20px;
     }
+
     header {
       text-align: center;
       background: #ffffff;
       padding: 60px 0;
       margin-bottom: 40px;
+      animation: fadeDown 1s ease-out;
     }
+
     .profile-img {
       width: 200px;
       height: 200px;
@@ -30,35 +36,58 @@
       object-fit: cover;
       margin-bottom: 20px;
       border: 4px solid #ddd;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
     h1 {
       font-size: 2.5em;
       margin: 0 0 10px;
     }
+
     p.subtitle {
       font-size: 1.2em;
       color: #555;
       margin: 0;
     }
+
     section {
       margin-bottom: 40px;
+      animation: fadeIn 1s ease-out;
     }
+
     h2 {
       font-size: 1.8em;
       border-bottom: 2px solid #ddd;
       padding-bottom: 10px;
       margin-bottom: 20px;
     }
+
+    ul {
+      padding-left: 20px;
+    }
+
     ul li {
       margin-bottom: 10px;
+      position: relative;
+      padding-left: 10px;
     }
+
     a {
       color: #007ACC;
       text-decoration: none;
+      transition: color 0.2s ease-in-out;
     }
+
     a:hover {
+      color: #005fa3;
       text-decoration: underline;
     }
+
     footer {
       text-align: center;
       font-size: 0.9em;
@@ -66,19 +95,38 @@
       border-top: 1px solid #ddd;
       color: #666;
     }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive image */
+    @media (max-width: 600px) {
+      .profile-img {
+        width: 150px;
+        height: 150px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="profile.jpg" alt="Farai Mumanyi" class="profile-img">
+    <img src="profile.jpg" alt="Farai Mumanyi" class="profile-img" />
     <h1>Farai Mumanyi</h1>
-    <p class="subtitle"> Improving Population Health | Project Management | Certified Data Enthusiast</p>
+    <p class="subtitle">Improving Population Health | Project Management | Certified Data Enthusiast</p>
   </header>
 
   <div class="container">
     <section id="about">
       <h2>About Me</h2>
-      <p>I am a passionate data-driven individual with a background in Public Health, a STEM MBA (Project Management emphasis), and certifications in Data Science, Data Analytics and CAPM. I apply project management skills, basic technology and data analytics to solve real-world health challenges and optimize healthcare operations</p>
+      <p>I am a passionate data-driven individual with a background in Public Health, a STEM MBA (Project Management emphasis), and certifications in Data Science, Data Analytics and CAPM. I apply project management skills, basic technology and data analytics to solve real-world health challenges and optimize healthcare operations.</p>
     </section>
 
     <section id="skills">
@@ -87,8 +135,8 @@
         <li>Project Management (Agile, Scrum)</li>
         <li>Public Health Analytics</li>
         <li>Python & R (Basic), SQL, Excel</li>
-        <li>Data Visualization (Matplotlib, Power BI, Tableu)</li>
-        <li>Basic Machine Learning & Web Development (GitHub Pages, HTML)
+        <li>Data Visualization (Matplotlib, Power BI, Tableau)</li>
+        <li>Basic Machine Learning & Web Development (GitHub Pages, HTML)</li>
         <li>Epidemiology & Health Programming</li>
         <li>Business Leadership</li>
       </ul>
@@ -106,7 +154,7 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:your.email@example.com">faraimumanyiproject@gmail.com</a></p>
+      <p>Email: <a href="mailto:faraimumanyiproject@gmail.com">faraimumanyiproject@gmail.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/farai-mumanyi" target="_blank">linkedin.com/in/farai-mumanyi</a></p>
     </section>
   </div>
