@@ -1,28 +1,3 @@
-<img src="profile.jpg" alt="Farai Mumanyi" style="border-radius: 50%; width: 150px; display: block; margin-left: auto; margin-right: auto;" />
-
-<h2 style="text-align: center;">Farai Mumanyi</h2>
-
----
-
-## About Me
-
-I am a passionate and driven individual with a background in Public Health, a STEM MBA (Project Management emphasis), and certifications in IBM Data Science, Data analytics, Project Management (CAPM). I use project management principles, technology and data analytics to solve real-world health challenges and optimize operations in healthcare settings.
-
----
-
-## Skills
-
-- Project Management (Agile, Scrum)
-- Business Leadership
-- Public Health Analytics
-- Epidemiology & Health Programming 
-- Python (Basic), R (Basic), SQL, Excel
-- Data Visualisation (Matplotlib, Seaborn, Power BI, Tableau)
-- Machine Learning Basics
-- Basic Web Development (GitHub Pages, HTML)
-
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,6 +30,15 @@ I am a passionate and driven individual with a background in Public Health, a ST
     section {
       padding: 60px 0;
     }
+    .profile-img {
+      width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 15px;
+    }
+    .text-center h2 {
+      font-weight: 700;
+    }
     footer {
       background: #023e8a;
       color: white;
@@ -80,7 +64,38 @@ I am a passionate and driven individual with a background in Public Health, a ST
     </div>
   </nav>
 
-  <!-- Header -->
+  <!-- Profile Section -->
+  <section class="container text-center">
+    <img src="profile.jpg" alt="Farai Mumanyi" class="profile-img">
+    <h2>Farai Mumanyi</h2>
+  </section>
+
+  <!-- About Me -->
+  <section class="container">
+    <h2 class="text-center">About Me</h2>
+    <p class="lead text-center">I am a passionate and driven individual with a background in Public Health, a STEM MBA (Project Management emphasis), and certifications in IBM Data Science, Data Analytics, and CAPM. I use project management principles, technology, and data analytics to solve real-world health challenges and optimize operations in healthcare settings.</p>
+  </section>
+
+  <!-- Skills -->
+  <section class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Project Management (Agile, Scrum)</li>
+          <li class="list-group-item">Business Leadership</li>
+          <li class="list-group-item">Public Health Analytics</li>
+          <li class="list-group-item">Epidemiology & Health Programming</li>
+          <li class="list-group-item">Python (Basic), R (Basic), SQL, Excel</li>
+          <li class="list-group-item">Data Visualization (Matplotlib, Seaborn, Power BI, Tableau)</li>
+          <li class="list-group-item">Machine Learning Basics</li>
+          <li class="list-group-item">Basic Web Development (GitHub Pages, HTML)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Header / Project Title -->
   <header>
     <div class="container">
       <h1>Clinic Operations Optimization with Python</h1>
@@ -88,7 +103,7 @@ I am a passionate and driven individual with a background in Public Health, a ST
     </div>
   </header>
 
-  <!-- About Project -->
+  <!-- Project Overview -->
   <section id="about" class="container">
     <h2>Project Overview</h2>
     <p>This project uses Python, data science, and project management principles to optimize clinic operations such as staff scheduling and patient flow.</p>
@@ -99,7 +114,7 @@ I am a passionate and driven individual with a background in Public Health, a ST
     </ul>
   </section>
 
-  <!-- Links -->
+  <!-- Project Links -->
   <section id="links" class="container">
     <h2>Project Links</h2>
     <ul>
@@ -115,9 +130,8 @@ I am a passionate and driven individual with a background in Public Health, a ST
     </div>
   </footer>
 
-  <!-- Bootstrap JS Bundle -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
 
