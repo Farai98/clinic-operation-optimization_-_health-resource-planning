@@ -1,126 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Farai Mumanyi Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Farai Mumanyi — Health & Data Portfolio</title>
   <style>
     body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f7f8fa;
       margin: 0;
-      padding: 0;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f7f7;
+      color: #222;
+      line-height: 1.6;
     }
-
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
     header {
-      background-color: #0077b6;
-      color: white;
       text-align: center;
-      padding: 3em 1em;
+      background: #ffffff;
+      padding: 60px 0;
+      margin-bottom: 40px;
     }
-
     .profile-img {
-      width: 220px;
-      height: 220px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid white;
-      margin: 0 auto 1em auto;
-      display: block;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      margin-bottom: 20px;
+      border: 4px solid #ddd;
     }
-
     h1 {
-      font-size: 2.8em;
-      font-weight: 700;
-      margin-bottom: 0.2em;
+      font-size: 2.5em;
+      margin: 0 0 10px;
     }
-
-    p {
+    p.subtitle {
       font-size: 1.2em;
-      margin-top: 0;
+      color: #555;
+      margin: 0;
     }
-
-    .container {
-      max-width: 900px;
-      margin: 2em auto;
-      padding: 0 1em;
-    }
-
-    h2 {
-      font-size: 2em;
-      color: #023e8a;
-      margin-top: 2em;
-      margin-bottom: 0.5em;
-      text-align: left;
-    }
-
     section {
-      margin-bottom: 2em;
+      margin-bottom: 40px;
     }
-
-    .about-text, .skills-list {
-      font-size: 1em;
-      line-height: 1.6;
-      text-align: left;
+    h2 {
+      font-size: 1.8em;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
     }
-
-    ul {
-      padding-left: 1.2em;
+    ul li {
+      margin-bottom: 10px;
     }
-
-    .project-link {
-      color: #0077b6;
+    a {
+      color: #007ACC;
       text-decoration: none;
     }
-
-    .project-link:hover {
+    a:hover {
       text-decoration: underline;
     }
-
-    @media (max-width: 600px) {
-      .profile-img {
-        width: 150px;
-        height: 150px;
-      }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      padding: 20px 0;
+      border-top: 1px solid #ddd;
+      color: #666;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="profile.jpg" alt="Farai Mumanyi" class="profile-img" />
+    <img src="profile.jpg" alt="Farai Mumanyi" class="profile-img">
     <h1>Farai Mumanyi</h1>
-    <p>Public Health & Project Management | Data Enthusiast | Future Health Analyst</p>
+    <p class="subtitle">Public Health | Project Management | Data Enthusiast</p>
   </header>
 
   <div class="container">
-    <section>
+    <section id="about">
       <h2>About Me</h2>
-      <p class="about-text">
-        I am a public health graduate currently pursuing an MBA in Project Management (STEM) at Central Michigan University. 
-        With over 3 years of experience in public health program implementation, I am passionate about combining my health background 
-        with data analytics to improve health systems. I am currently learning data science and Python programming, and I enjoy 
-        creating insights from health-related data to guide better decisions.
-      </p>
+      <p>I am a passionate health professional blending public health expertise with data analytics and project management to drive operational improvements in healthcare.</p>
     </section>
 
-    <section>
+    <section id="skills">
       <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Public Health Program Management</li>
-        <li>Data Analysis with Python</li>
-        <li>Project Planning & Implementation</li>
-        <li>Health Promotion & Communication</li>
-        <li>Quantitative & Qualitative Research</li>
-        <li>Data Visualization (Excel, Matplotlib)</li>
-        <li>Stakeholder Coordination</li>
+      <ul>
+        <li>Project Management (Agile, Scrum)</li>
+        <li>Public Health Analytics</li>
+        <li>Python, SQL, Excel</li>
+        <li>Data Visualization (Matplotlib, Power BI)</li>
       </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Project — Clinic Operations Optimization</h2>
+      <p>A Python-based model optimizing staffing, patient flow, and resource use in clinics.</p>
+      <ul>
+        <li><strong>Tools:</strong> Python (Pandas, NumPy), Data Visualization</li>
+        <li><strong>Focus:</strong> Improving clinic efficiency and care delivery</li>
+      </ul>
+      <p><a href="https://github.com/Farai98/clinic-operation-optimization_-_health-resource-planning" target="_blank">View GitHub Repository</a></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/farai-mumanyi" target="_blank">linkedin.com/in/farai-mumanyi</a></p>
     </section>
   </div>
 
+  <footer>
+    &copy; 2025 Farai Mumanyi — All rights reserved
+  </footer>
 </body>
 </html>
 
